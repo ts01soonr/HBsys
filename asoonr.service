@@ -1,0 +1,11 @@
+ [Unit]
+ Description=A Soonr Service
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ ExecStart=/bin/bash /Auto/start_soonr.sh
+
+ [Install]
+ WantedBy=multi-user.target
+
