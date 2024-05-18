@@ -1,0 +1,29 @@
+name: HB CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  HB-Demo:
+
+    runs-on: ubuntu-20.04
+    
+    permissions:
+      issues: write
+      contents: write
+      actions: write
+      checks: write
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 8
+      uses: actions/setup-java@v3
+      with:
+        java-version: '8'
+        distribution: 'temurin'
+    - name: Run-It
+      run: sh start_soonr.sh     
