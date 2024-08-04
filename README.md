@@ -17,3 +17,9 @@ Refer steps https://www.linuxcapable.com/how-to-install-openjdk-8-on-ubuntu-linu
 # Check service status
 sudo systemctl status asoonr.service
 
+# Demo System Login 
+
+- url: https://hb.mdbgo.io/
+- username: root
+- password: test
+
